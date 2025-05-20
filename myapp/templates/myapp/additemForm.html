@@ -1,0 +1,22 @@
+{%  extends "myapp/base.html" %}
+
+{% block content %}
+
+<h1>Add New Items Here..!</h1>
+<form method="POST" action="{% url 'myapp:additem' %}">
+  {% csrf_token %}
+    <label for="id_item_name">Item Name</label>
+    {{form.item_name}}
+    <br/>
+    <label for="id_desc">Item Description</label>
+    {{form.desc}}
+    <br/>
+    <label for="id_price">Item Price</label>
+    {{form.price}}
+    <br/>
+    <label for="id_image">Image URL</label>
+    {{form.image}}
+    <br/>
+    <button>Submit</button>
+</form>
+{% endblock %}
