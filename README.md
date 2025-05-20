@@ -19,8 +19,8 @@ A simple and dynamic Django web app to display and manage food items like Pizza 
 
 ### **1. Clone the Repository**
 ```sh
-git clone https://github.com/your-username/FoodApp-Python-Django.git
-cd FoodApp-Python-Django
+git clone https://github.com/your-username/myapp.git
+cd myapp
 ```
 
 ### **2. Set Up a Virtual Environment**
