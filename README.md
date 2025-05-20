@@ -4,8 +4,7 @@ A simple and dynamic Django web app to display and manage food items like Pizza 
 ## 🛠️ Tech Stack
 
 - **Backend**: Django (Python)
-- **Frontend**: HTML + CSS (optionally Bootstrap or Tailwind CSS)
-- **Database**: SQLite (Django default)
+- **Frontend**: HTML, CSS
 
 ## ✨ Features
 
@@ -18,9 +17,40 @@ A simple and dynamic Django web app to display and manage food items like Pizza 
   - `Logout` → Ends session
 ## 🚀 Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/FoodApp-Python-Django.git
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/your-username/FoodApp-Python-Django.git
 cd FoodApp-Python-Django
+```
+
+### **2. Set Up a Virtual Environment**
+```sh
+python3 -m venv venv
+source venv/bin/activate  # For Mac/Linux
+
+python -m venv myenv
+source myenv/Scripts/activate # For Windows
+```
+
+### **3. Install Dependencies**
+```sh
+pip install django
+```
+
+### **4. Apply Migrations**
+```sh
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### **5. Create a Superuser**
+```sh
+python manage.py createsuperuser
+```
+
+### **6. Run the Development Server**
+```sh
+python manage.py runserver
+```
+Now open your browser at: http://127.0.0.1:8000/
 
